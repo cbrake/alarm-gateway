@@ -14,6 +14,8 @@ This program can run on any computer system that is:
 * runs node.js
 * has a USB port
 
+Use [DocumentUp](http://documentup.com/cbrake/alarm-gateway) to read this README in a more structured way (with TOC).
+
 # Installation 
 
 One possible configuration is:
@@ -26,7 +28,7 @@ In this case we have the following components:
 * JeeNode RF to Serial gateway:  Receives transmissions from sensor nodes, activates audible alarms, and sends state information out the serial port.
 * Beaglebone (or PC, etc): receives serial data from JeeNode, and sends out emails, text messages, etc.
 
-## RF System
+## RF Sensor System
 
 Example code for a JeeNode based sensor system is located here: https://github.com/cbrake/bec-arduino/tree/master/examples/RemoteAlarm
 
@@ -34,7 +36,13 @@ Example code for a JeeNode based sensor system is located here: https://github.c
 
 ## Gateway
 
-This is the device this program runs on (Beaglebone, etc).  Copy the config-example.js to config.js and modify for your setup.  The gateway simply monitors text on the serial port.  If it sees the word STATE in any of the messages, it sends emails, and optionally a configured message.
+### Config file
+
+This is the device this program runs on (Beaglebone, etc).  Copy the [config-example.js](https://github.com/cbrake/alarm-gateway/blob/master/config-example.js) to config.js and modify for your setup.  
+
+The gateway simply monitors text on the serial port.  If it sees the word STATE in any of the messages, it sends emails, and optionally a configured message.
+
+### Install dependencies and run
 
 on the Gateway system (can be beaglebone):
 

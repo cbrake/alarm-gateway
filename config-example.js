@@ -19,7 +19,7 @@ exports.config = {
       }
     },
     from: 'alarm@mydomain.com',
-    // You can typicallysend text messages to a phone by using an email address like:
+    // You can typically send text messages to a phone by using an email address like:
     // phonenumber@txt.att.net
     // phonenumber@vtext.com
     // phonenumber@tmomail.net
