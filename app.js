@@ -22,6 +22,14 @@ var process_state = function(state) {
     subject: "Alarm change: " + state
   }
 
+  // check if we have a message to send with this state
+  for (var k in config.messages) {
+    if (state.indexOf(k) >= 0) {
+      mailOptions.text = config.messages[k]
+      break
+    }
+  }
+
   transport.sendMail(mailOptions, function(error, response) {
     if (error) {
       console.log(error)
