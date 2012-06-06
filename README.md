@@ -5,7 +5,7 @@ Internet gateway for an alarm system.
 This is a program that monitors a remote alarm system and sends emails to users when the alarm state changes.  Using email->text gateways provided by most cell phone carriers, you can easily send text messages to phones when alarm events occur.  With a combination of JeeNode, BeagleBone, and NodeJS technology, it is possible to quickly create an alarm system that will:
 
 * monitor battery powered sensors in a building or short distances from buildings
-* activate audiable alarms in the building
+* activate audible alarms in the building
 * send email/text messages when the alarm state changes
 
 This program can run on any computer system that is:
