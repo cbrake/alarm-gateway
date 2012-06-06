@@ -14,6 +14,8 @@ This program can run on any computer system that is:
 * runs node.js
 * has a USB port
 
+Use [DocumentUp](http://documentup.com/cbrake/alarm-gateway) to read this README in a more structured way (with TOC).
+
 # Installation 
 
 One possible configuration is:
