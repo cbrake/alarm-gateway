@@ -26,7 +26,7 @@ In this case we have the following components:
 * JeeNode RF to Serial gateway:  Receives transmissions from sensor nodes, activates audible alarms, and sends state information out the serial port.
 * Beaglebone (or PC, etc): receives serial data from JeeNode, and sends out emails, text messages, etc.
 
-## RF System
+## RF Sensor System
 
 Example code for a JeeNode based sensor system is located here: https://github.com/cbrake/bec-arduino/tree/master/examples/RemoteAlarm
 
