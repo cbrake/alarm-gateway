@@ -34,7 +34,13 @@ Example code for a JeeNode based sensor system is located here: https://github.c
 
 ## Gateway
 
-This is the device this program runs on (Beaglebone, etc).  Copy the config-example.js to config.js and modify for your setup.  The gateway simply monitors text on the serial port.  If it sees the word STATE in any of the messages, it sends emails, and optionally a configured message.
+### Config file
+
+This is the device this program runs on (Beaglebone, etc).  Copy the [config-example.js](https://github.com/cbrake/alarm-gateway/blob/master/config-example.js) to config.js and modify for your setup.  
+
+The gateway simply monitors text on the serial port.  If it sees the word STATE in any of the messages, it sends emails, and optionally a configured message.
+
+### Install dependencies and run
 
 on the Gateway system (can be beaglebone):
 
