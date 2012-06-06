@@ -22,13 +22,15 @@ Battery powered JeeNode --(RF)--> JeeNode --(Serial/USB)--> Beaglebone --(Ethern
 
 In this case we have the following components:
 
-* Battery powered JeeNode sensor:  This tyep of node can run for many months from several AA batteries.
+* Battery powered JeeNode sensor:  This type of node can run for many months from several AA batteries.
 * JeeNode RF to Serial gateway:  Receives transmissions from sensor nodes, activates audible alarms, and sends state information out the serial port.
 * Beaglebone (or PC, etc): receives serial data from JeeNode, and sends out emails, text messages, etc.
 
 ## RF System
 
-An example system for the alarms is located here: https://github.com/cbrake/bec-arduino/tree/master/examples/RemoteAlarm
+Example code for a JeeNode based sensor system is located here: https://github.com/cbrake/bec-arduino/tree/master/examples/RemoteAlarm
+
+(JeeNodes are based on Arduino technology)
 
 ## Gateway
 
