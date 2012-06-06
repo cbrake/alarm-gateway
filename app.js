@@ -3,7 +3,7 @@ var port = new SerialPort()
 var nodemailer = require('nodemailer')
 var config = require('./config').config
 
-var transport = nodemailer.createTransport(config.email_transport_type, config.email_transport_options)
+var transport = nodemailer.createTransport(config.email.transport.type, config.email.transport.options)
 
 String.prototype.trim = function() {
     return this.replace(/^\s+|\s+$/g,"");
@@ -17,8 +17,8 @@ String.prototype.rtrim = function() {
 
 var process_state = function(state) {
   var mailOptions = {
-    from: config.email_from,
-    to: config.email_to,
+    from: config.email.from,
+    to: config.email.to,
     subject: "Alarm change: " + state
   }
 
@@ -69,8 +69,8 @@ port.on('error', function(err) {
   console.log(err);
 })
 
-port.open('/dev/ttyUSB1', {
-  baudRate: 57600,
+port.open(config.serial.port, {
+  baudRate: config.serial.baud,
   dataBits: 8,
   parity: 'none',
   stopBits: 1
